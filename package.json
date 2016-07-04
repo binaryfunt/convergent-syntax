@@ -1,9 +1,14 @@
 {
   "name": "convergent-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A cooler & slightly punchier colour palette, similar to the Brackets Convergent theme (but different in a few ways). The PHP styling is better for when mixed with HTML/XML.",
-  "keywords": ["syntax", "theme", "dark", "convergent"],
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark",
+    "convergent"
+  ],
   "repository": "https://github.com/binaryfunt/convergent-syntax",
   "license": "MIT",
   "engines": {

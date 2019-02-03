@@ -133,8 +133,8 @@ atom-text-editor .bracket-matcher {
   color: @purple;
 }
 
-  color: @lime;
 .syntax--constant {
+  color:  @pink2; //@lime;
 
   &.syntax--character.syntax--escape {
     color: @cyan;
@@ -154,6 +154,11 @@ atom-text-editor .bracket-matcher {
 
   &.syntax--other.syntax--symbol {
     color: @green;
+  }
+
+  &.syntax--other,
+  &.syntax--css:not(.syntax--numeric) {
+    color: @lime;
   }
 
   &.syntax--boolean, &.syntax--language.syntax--python, &.syntax--language.syntax--json {

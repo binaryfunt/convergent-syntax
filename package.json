@@ -2,7 +2,7 @@
   "name": "convergent-syntax",
   "theme": "syntax",
   "version": "0.2.0",
-  "description": "A cooler & slightly punchier colour palette, similar to the Brackets Convergent theme (but different in a few ways). The PHP styling is better for when mixed with HTML/XML.",
+  "description": "A cooler & slightly punchier colour palette. Syntax theme for Atom.",
   "keywords": [
     "syntax",
     "theme",

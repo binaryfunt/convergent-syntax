@@ -81,11 +81,10 @@ atom-text-editor .highlight.current-result ~ .highlight.selection .region {
 }
 
 atom-text-editor .bracket-matcher {
-    border-bottom: 1px solid @green;
+    border: none !important;
+    border-bottom: 1px solid @sea-green !important;
+    background-color: lighten(@background, 10%);
     position: absolute;
-    z-index: 1;
-    // border: 1px solid rgba(0, 255, 0, 0.7);
-    // background-color: rgba(0, 255, 0, 0.3);
 }
 
 

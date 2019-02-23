@@ -354,7 +354,6 @@ atom-text-editor .bracket-matcher {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @yellow;
     font-weight: bold;
   }
 
@@ -367,7 +366,7 @@ atom-text-editor .bracket-matcher {
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: tint(@foreground, 75%);
     font-style: italic;
   }
 
@@ -387,25 +386,72 @@ atom-text-editor .bracket-matcher {
     color: @orange;
   }
 
-  &.syntax--raw.syntax--inline {
-    color: @green;
+  &.syntax--raw {
+    background: lighten(@background, 15%);
+    border-radius: 2px;
   }
 
   &.syntax--link {
     color: @pale-blue2;
     text-decoration: underline;
   }
+
+  &.syntax--strike {
+    color: shade(@foreground, 25%);
+    text-decoration: line-through;
+  }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @pink2;
+    color: @cyan;
   }
 }
 
-.syntax--entity.syntax--gfm {
-  // color: @pale-blue1;
+.syntax--gfm {
+  &.syntax--list {
+    color: @pink2;
+  }
+
+  &.syntax--support:not(.syntax--quote) {
+    color: darken(@foreground, 20%);
+    background: lighten(@background, 15%);
+    border-radius: 2px;
+  }
+
+  &.syntax--entity {
+    color: @sky-blue;
+  }
+
+  &.syntax--quote {
+    @color: pale-blue1;
+    color: @@color;
+
+    &.syntax--support {
+      color: @foreground;
+    }
+
+    .syntax--italic {
+      color: tint(@@color, 50%);
+    }
+
+    .syntax--strike {
+      color: shade(@@color, 25%);
+    }
+
+    .syntax--link {
+      color: tint(@@color, 40%);
+    }
+
+    .syntax--raw {
+      color: tint(@@color, 10%);
+    }
+  }
+
+  &.syntax--hr {
+    color: @pink2;
+  }
 }
 
 atom-text-editor[mini] .scroll-view {

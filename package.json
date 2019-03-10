@@ -1,7 +1,7 @@
 {
   "name": "convergent-syntax",
   "theme": "syntax",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A cooler & slightly punchier colour palette. Syntax theme for Atom.",
   "keywords": [
     "syntax",

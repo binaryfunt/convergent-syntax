@@ -311,7 +311,9 @@ atom-text-editor .bracket-matcher {
       color: @pink2;
     }
 
-    &.syntax--psuedo-element {
+    &.syntax--pseudo-element,
+    &.syntax--pseudo-class,
+    .syntax--attribute-selector & {
       color: @teal;
     }
   }
